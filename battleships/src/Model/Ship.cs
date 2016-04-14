@@ -16,6 +16,7 @@ public class Ship
 	private int _col;
 
 	private Direction _direction;
+
 	/// <summary>
 	/// The type of ship
 	/// </summary>
@@ -58,7 +59,7 @@ public class Ship
 	public int Row {
 		get { return _row; }
 	}
-
+		
 	public int Column {
 		get { return _col; }
 	}
@@ -96,6 +97,9 @@ public class Ship
 		_tiles.Clear();
 	}
 
+	/// <summary>
+	/// Increments hits taken when the ship is hit
+	/// </summary>
 	public void Hit()
 	{
 		_hitsTaken = _hitsTaken + 1;
@@ -109,6 +113,9 @@ public class Ship
 		get { return _tiles.Count > 0; }
 	}
 
+	/// <summary>
+	/// Checks if ship is destroyed
+	/// </summary>
 	public bool IsDestroyed {
 		get { return Hits == Size; }
 	}

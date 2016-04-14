@@ -29,7 +29,7 @@ public class SeaGridAdapter : ISeaGrid
 		}
 	}
 
-	#Region "ISeaGrid Members"
+	#region "ISeaGrid Members"
 
 	/// <summary>
 	/// Changes the discovery grid. Where there is a ship we will sea water
@@ -52,7 +52,7 @@ public class SeaGridAdapter : ISeaGrid
 	/// <summary>
 	/// Indicates that the grid has been changed
 	/// </summary>
-	public event EventHandler ISeaGrid.Changed;
+	public event EventHandler Changed;		/// BUGFIX test: public event EventHandler ISeaGrid.Changed;
 
 	/// <summary>
 	/// Get the width of a tile
@@ -78,6 +78,6 @@ public class SeaGridAdapter : ISeaGrid
 	{
 		return _MyGrid.HitTile(row, col);
 	}
-	#End Region
+	#endregion
 
 }

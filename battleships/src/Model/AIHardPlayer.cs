@@ -279,10 +279,9 @@ public class AIHardPlayer : AIPlayer
 	}
 
 	/// <summary>
-	/// ReOrderTargets will optimise the targeting by re-orderin the stack that the targets are in.
+	/// ReOrderTargets will optimise the targeting by re-ordering the stack that the targets are in.
 	/// By putting the most important targets at the top they are the ones that will be shot at first.
 	/// </summary>
-
 	private void ReOrderTargets()
 	{
 		//if the ship is lying on the same row, call MoveToTopOfStack to optimise on the row
@@ -333,7 +332,6 @@ public class AIHardPlayer : AIPlayer
 	/// </summary>
 	/// <param name="row">the row of the targets location</param>
 	/// <param name="column">the column of the targets location</param>
-
 	private void AddTarget(int row, int column)
 	{
 

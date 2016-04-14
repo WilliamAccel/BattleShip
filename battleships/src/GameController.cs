@@ -109,6 +109,12 @@ public class GameController
 		SwinGame.RefreshScreen();
 	}
 
+	/// <summary>
+	/// Plays animation and sound for a hit
+	/// </summary>
+	/// <param name="row">the row of the hit</param>
+	/// <param name="column">the row of the hit</param>
+	/// <param name="showAnimation">flag that decides whether to draw the explosion or not</param>
 	private void PlayHitSequence(int row, int column, bool showAnimation)
 	{
 		if (showAnimation) {
@@ -120,6 +126,12 @@ public class GameController
 		DrawAnimationSequence();
 	}
 
+	/// <summary>
+	/// Plays animation and sound for a miss
+	/// </summary>
+	/// <param name="row">the row of the miss</param>
+	/// <param name="column">the row of the miss</param>
+	/// <param name="showAnimation">flag that decides whether to draw the splash or not</param>
 	private void PlayMissSequence(int row, int column, bool showAnimation)
 	{
 		if (showAnimation) {

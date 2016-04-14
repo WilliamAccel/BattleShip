@@ -15,6 +15,7 @@ public class Player : IEnumerable<Ship>
 	private int _hits;
 
 	private int _misses;
+
 	/// <summary>
 	/// Returns the game that the player is part of.
 	/// </summary>
@@ -112,6 +113,11 @@ public class Player : IEnumerable<Ship>
 		get { return _misses; }
 	}
 
+	/// <summary>
+	/// Calculates the score
+	/// </summary>
+	/// <value>miss count</value>
+	/// <returns>The calcualted score based on hits, shots and killed ships</returns>
 	public int Score {
 		get {
 			if (IsDestroyed) {
@@ -184,13 +190,15 @@ public class Player : IEnumerable<Ship>
 		return result;
 	}
 
+	/// <summary>
+	/// Places ships randomly on board
+	/// </summary>
 	public virtual void RandomizeDeployment()
 	{
 		bool placementSuccessful;
 		Direction heading;
 
 		//for each ship to deploy in shipist
-
 		foreach (ShipName shipToPlace in Enum.GetValues(typeof(ShipName))) {
 			if (shipToPlace == ShipName.None)
 				continue;

@@ -191,7 +191,9 @@ public class GameResources
 		SwinGame.Delay(1500);
 
 	}
-
+	/// <summary>
+	/// Shows the description of what is currently being loaded
+	/// </summary>
 	private void ShowMessage(string message, int number)
 	{
 		const int TX = 310;
@@ -261,33 +263,29 @@ public class GameResources
 
 	private void FreeFonts()
 	{
-		Font obj;
-		foreach ( obj in _Fonts.Values) {
-			SwinGame.FreeFont(obj);
+		foreach (var font in _Fonts.Values) {
+			SwinGame.FreeFont(font);
 		}
 	}
 
 	private void FreeImages()
 	{
-		Bitmap obj;
-		foreach ( obj in _Images.Values) {
-			SwinGame.FreeBitmap(obj);
+		foreach (var img in _Images.Values) {
+			SwinGame.FreeBitmap(img);
 		}
 	}
 
 	private void FreeSounds()
 	{
-		SoundEffect obj;
-		foreach ( obj in _Sounds.Values) {
-			Audio.FreeSoundEffect(obj);
+		foreach (var sound in _Sounds.Values) {
+			Audio.FreeSoundEffect(sound);
 		}
 	}
 
 	private void FreeMusic()
 	{
-		Music obj;
-		foreach ( obj in _Music.Values) {
-			Audio.FreeMusic(obj);
+		foreach(var music in _Music.Values) {
+			Audio.FreeMusic(music);
 		}
 	}
 
