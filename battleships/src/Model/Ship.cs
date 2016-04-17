@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 using System.Collections.Generic;
-=======
->>>>>>> Converted-Code-C#
 /// <summary>
 /// A Ship has all the details about itself. For example the shipname,
 /// size, number of hits taken and the location. Its able to add tiles,
@@ -129,8 +126,4 @@ public class Ship
 		_col = col;
 		_direction = direction;
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> Converted-Code-C#

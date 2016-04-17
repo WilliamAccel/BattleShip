@@ -1,23 +1,13 @@
-<<<<<<< HEAD
 using System.Collections.Generic;
-=======
->>>>>>> Converted-Code-C#
 /// <summary>
 /// The SeaGrid is the grid upon which the ships are deployed.
 /// </summary>
 /// <remarks>
 /// The grid is viewable via the ISeaGrid interface as a read only
-<<<<<<< HEAD
 /// grid. This can be used in conjuncture with the SeaGridAdapter to
 /// mask the position of the ships.
 /// </remarks>
 class SeaGrid : ISeaGrid
-=======
-/// grid. This can be used in conjuncture with the SeaGridAdapter to 
-/// mask the position of the ships.
-/// </remarks>
-public class SeaGrid : ISeaGrid
->>>>>>> Converted-Code-C#
 {
 
 	private const int _WIDTH = 10;
@@ -30,22 +20,14 @@ public class SeaGrid : ISeaGrid
 	/// <summary>
 	/// The sea grid has changed and should be redrawn.
 	/// </summary>
-<<<<<<< HEAD
 	// public event EventHandler ISeaGrid.Changed;
-=======
-	public event EventHandler ISeaGrid.Changed;
->>>>>>> Converted-Code-C#
 
 	/// <summary>
 	/// The width of the sea grid.
 	/// </summary>
 	/// <value>The width of the sea grid.</value>
 	/// <returns>The width of the sea grid.</returns>
-<<<<<<< HEAD
 	int ISeaGrid.Width {
-=======
-	public int ISeaGrid.Width {
->>>>>>> Converted-Code-C#
 		get { return _WIDTH; }
 	}
 
@@ -54,22 +36,14 @@ public class SeaGrid : ISeaGrid
 	/// </summary>
 	/// <value>The height of the sea grid</value>
 	/// <returns>The height of the sea grid</returns>
-<<<<<<< HEAD
 	int ISeaGrid.Height {
-=======
-	public int ISeaGrid.Height {
->>>>>>> Converted-Code-C#
 		get { return _HEIGHT; }
 	}
 
 	/// <summary>
 	/// ShipsKilled returns the number of ships killed
 	/// </summary>
-<<<<<<< HEAD
 	int ShipsKilled {
-=======
-	public int ShipsKilled {
->>>>>>> Converted-Code-C#
 		get { return _ShipsKilled; }
 	}
 
@@ -79,22 +53,14 @@ public class SeaGrid : ISeaGrid
 	/// <param name="x">x coordinate of the tile</param>
 	/// <param name="y">y coordiante of the tile</param>
 	/// <returns></returns>
-<<<<<<< HEAD
 	TileView ISeaGrid.Item {
-=======
-	public TileView ISeaGrid.Item {
->>>>>>> Converted-Code-C#
 		get { return _GameTiles(x, y).View; }
 	}
 
 	/// <summary>
 	/// AllDeployed checks if all the ships are deployed
 	/// </summary>
-<<<<<<< HEAD
 	bool AllDeployed {
-=======
-	public bool AllDeployed {
->>>>>>> Converted-Code-C#
 		get {
 			foreach (Ship s in _Ships.Values) {
 				if (!s.IsDeployed) {
@@ -109,11 +75,7 @@ public class SeaGrid : ISeaGrid
 	/// <summary>
 	/// SeaGrid constructor, a seagrid has a number of tiles stored in an array
 	/// </summary>
-<<<<<<< HEAD
 	SeaGrid(Dictionary<ShipName, Ship> ships)
-=======
-	public SeaGrid(Dictionary<ShipName, Ship> ships)
->>>>>>> Converted-Code-C#
 	{
 		//fill array with empty Tiles
 		int i;
@@ -133,11 +95,7 @@ public class SeaGrid : ISeaGrid
 	/// <param name="col">the column selected</param>
 	/// <param name="ship">the ship selected</param>
 	/// <param name="direction">the direction the ship is going</param>
-<<<<<<< HEAD
 	void MoveShip(int row, int col, ShipName ship, Direction direction)
-=======
-	public void MoveShip(int row, int col, ShipName ship, Direction direction)
->>>>>>> Converted-Code-C#
 	{
 		Ship newShip = _Ships(ship);
 		newShip.Remove();
@@ -201,11 +159,7 @@ public class SeaGrid : ISeaGrid
 	/// <param name="row">the row at which is being shot</param>
 	/// <param name="col">the cloumn at which is being shot</param>
 	/// <returns>An attackresult (hit, miss, sunk, shotalready)</returns>
-<<<<<<< HEAD
 	AttackResult ISeaGrid.HitTile(int row, int col)
-=======
-	public AttackResult ISeaGrid.HitTile(int row, int col)
->>>>>>> Converted-Code-C#
 	{
 		try {
 			//tile is already hit
@@ -235,8 +189,4 @@ public class SeaGrid : ISeaGrid
 			}
 		}
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> Converted-Code-C#

@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
-=======
->>>>>>> Converted-Code-C#
 /// <summary>
 /// Player has its own _PlayerGrid, and can see an _EnemyGrid, it can also check if
 /// all ships are deployed and if all ships are detroyed. A Player can also attach.
@@ -132,11 +129,7 @@ public class Player : IEnumerable<Ship>
 	/// has.
 	/// </summary>
 	/// <returns>A Ship enumerator</returns>
-<<<<<<< HEAD
 	public IEnumerable<Ship>.GetShipEnumerator()
-=======
-	public IEnumerator<Ship> IEnumerable<Ship>.GetShipEnumerator()
->>>>>>> Converted-Code-C#
 	{
 		Ship[] result = new Ship[_Ships.Values.Count];
 		_Ships.Values.CopyTo(result, 0);
@@ -229,8 +222,4 @@ public class Player : IEnumerable<Ship>
 			} while (!placementSuccessful);
 		}
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> Converted-Code-C#

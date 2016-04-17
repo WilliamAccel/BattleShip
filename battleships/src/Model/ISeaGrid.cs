@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 using System;
-=======
->>>>>>> Converted-Code-C#
 /// <summary>
 /// The ISeaGrid defines the read only interface of a Grid. This
 /// allows each player to see and attack their opponents grid.
@@ -34,8 +31,4 @@ public interface ISeaGrid
 	/// <param name="col">the column of the tile</param>
 	/// <returns>the result of the attack</returns>
 	AttackResult HitTile(int row, int col);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> Converted-Code-C#

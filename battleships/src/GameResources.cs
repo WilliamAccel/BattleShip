@@ -261,48 +261,28 @@ public class GameResources
 
 	private void FreeFonts()
 	{
-<<<<<<< HEAD
 		foreach (var obj in _Fonts.Values) {
-=======
-		Font obj;
-		foreach ( obj in _Fonts.Values) {
->>>>>>> Converted-Code-C#
 			SwinGame.FreeFont(obj);
 		}
 	}
 
 	private void FreeImages()
 	{
-<<<<<<< HEAD
 		foreach (var obj in _Images.Values) {
-=======
-		Bitmap obj;
-		foreach ( obj in _Images.Values) {
->>>>>>> Converted-Code-C#
 			SwinGame.FreeBitmap(obj);
 		}
 	}
 
 	private void FreeSounds()
 	{
-<<<<<<< HEAD
 		foreach (var obj in _Sounds.Values) {
-=======
-		SoundEffect obj;
-		foreach ( obj in _Sounds.Values) {
->>>>>>> Converted-Code-C#
 			Audio.FreeSoundEffect(obj);
 		}
 	}
 
 	private void FreeMusic()
 	{
-<<<<<<< HEAD
 		foreach (var obj in _Music.Values) {
-=======
-		Music obj;
-		foreach ( obj in _Music.Values) {
->>>>>>> Converted-Code-C#
 			Audio.FreeMusic(obj);
 		}
 	}
@@ -315,8 +295,4 @@ public class GameResources
 		FreeSounds();
 		SwinGame.ProcessEvents();
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> Converted-Code-C#
