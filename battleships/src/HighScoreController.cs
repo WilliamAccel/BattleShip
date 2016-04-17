@@ -1,7 +1,10 @@
 using System.IO;
 using SwinGameSDK;
+<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
+=======
+>>>>>>> Converted-Code-C#
 
 /// <summary>
 /// Controls displaying and collecting high score data.
@@ -28,7 +31,11 @@ class HighScoreController
 		/// </summary>
 		/// <param name="obj">the object to compare to</param>
 		/// <returns>a value that indicates the sort order</returns>
+<<<<<<< HEAD
 	int System.IComparable.CompareTo(object obj)
+=======
+		public int System.IComparable.CompareTo(object obj)
+>>>>>>> Converted-Code-C#
 		{
 			if (obj is Score) {
 				Score other = (Score)obj;
@@ -49,7 +56,11 @@ class HighScoreController
 	/// The format is
 	/// # of scores
 	/// NNNSSS
+<<<<<<< HEAD
 	///
+=======
+	/// 
+>>>>>>> Converted-Code-C#
 	/// Where NNN is the name and SSS is the score
 	/// </remarks>
 	private void LoadScores()
@@ -88,7 +99,11 @@ class HighScoreController
 	/// The format is
 	/// # of scores
 	/// NNNSSS
+<<<<<<< HEAD
 	///
+=======
+	/// 
+>>>>>>> Converted-Code-C#
 	/// Where NNN is the name and SSS is the score
 	/// </remarks>
 	private void SaveScores()
@@ -198,4 +213,8 @@ class HighScoreController
 			EndCurrentState();
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Converted-Code-C#

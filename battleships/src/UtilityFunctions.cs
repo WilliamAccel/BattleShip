@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 using SwinGameSDK;
 using System.Collections.Generic;
 
+=======
+>>>>>>> Converted-Code-C#
 /// <summary>
 /// This includes a number of utility methods for
 /// drawing and interacting with the Mouse.
@@ -301,4 +304,8 @@ class UtilityFunctions
 			DrawScreen();
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Converted-Code-C#

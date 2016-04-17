@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 using System.Collections.Generic;
 
+=======
+>>>>>>> Converted-Code-C#
 /// <summary>
 /// AIHardPlayer is a type of player. This AI will know directions of ships
 /// when it has found 2 ship tiles and will try to destroy that ship. If that ship
@@ -44,7 +47,11 @@ public class AIHardPlayer : AIPlayer
 		}
 
 		/// <summary>
+<<<<<<< HEAD
 		/// If source shot and shootat shot are on the same row then
+=======
+		/// If source shot and shootat shot are on the same row then 
+>>>>>>> Converted-Code-C#
 		/// give a boolean true
 		/// </summary>
 		public bool SameRow {
@@ -52,8 +59,13 @@ public class AIHardPlayer : AIPlayer
 		}
 
 		/// <summary>
+<<<<<<< HEAD
 		/// If source shot and shootat shot are on the same column then
 		/// give a boolean true
+=======
+		/// If source shot and shootat shot are on the same column then 
+		/// give a boolean true 
+>>>>>>> Converted-Code-C#
 		/// </summary>
 		public bool SameColumn {
 			get { return _ShotAt.Column == _Source.Column; }
@@ -219,9 +231,15 @@ public class AIHardPlayer : AIPlayer
 	}
 
 	/// <summary>
+<<<<<<< HEAD
 	/// RemoveShotsAround will remove targets that belong to the destroyed ship by checking if
 	/// the source of the targets belong to the destroyed ship. If they don't put them on a new stack.
 	/// Then clear the targets stack and move all the targets that still need to be shot at back
+=======
+	/// RemoveShotsAround will remove targets that belong to the destroyed ship by checking if 
+	/// the source of the targets belong to the destroyed ship. If they don't put them on a new stack.
+	/// Then clear the targets stack and move all the targets that still need to be shot at back 
+>>>>>>> Converted-Code-C#
 	/// onto the targets stack
 	/// </summary>
 	/// <param name="toRemove"></param>
@@ -255,7 +273,11 @@ public class AIHardPlayer : AIPlayer
 	/// ProcessHit gets the last hit location coordinates and will ask AddTarget to
 	/// create targets around that location by calling the method four times each time with
 	/// a new location around the last hit location.
+<<<<<<< HEAD
 	/// It will then set the state of the AI and if it's not Searching or targetingShip then
+=======
+	/// It will then set the state of the AI and if it's not Searching or targetingShip then 
+>>>>>>> Converted-Code-C#
 	/// start ReOrderTargets.
 	/// </summary>
 	/// <param name="row"></param>
@@ -298,8 +320,13 @@ public class AIHardPlayer : AIPlayer
 
 	/// <summary>
 	/// MoveToTopOfStack will re-order the stack by checkin the coordinates of each target
+<<<<<<< HEAD
 	/// If they have the right column or row values it will be moved to the _Match stack else
 	/// put it on the _NoMatch stack. Then move all the targets from the _NoMatch stack back on the
+=======
+	/// If they have the right column or row values it will be moved to the _Match stack else 
+	/// put it on the _NoMatch stack. Then move all the targets from the _NoMatch stack back on the 
+>>>>>>> Converted-Code-C#
 	/// _Targets stack, these will be at the bottom making them less important. The move all the
 	/// targets from the _Match stack on the _Targets stack, these will be on the top and will there
 	/// for be shot at first
@@ -344,4 +371,8 @@ public class AIHardPlayer : AIPlayer
 		}
 	}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Converted-Code-C#

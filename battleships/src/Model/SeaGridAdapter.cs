@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 using System;
+=======
+>>>>>>> Converted-Code-C#
 /// <summary>
 /// The SeaGridAdapter allows for the change in a sea grid view. Whenever a ship is
 /// presented it changes the view into a sea tile instead of a ship tile.
@@ -30,7 +33,11 @@ public class SeaGridAdapter : ISeaGrid
 		}
 	}
 
+<<<<<<< HEAD
 	// #Region "ISeaGrid Members"
+=======
+	#Region "ISeaGrid Members"
+>>>>>>> Converted-Code-C#
 
 	/// <summary>
 	/// Changes the discovery grid. Where there is a ship we will sea water
@@ -38,7 +45,11 @@ public class SeaGridAdapter : ISeaGrid
 	/// <param name="x">tile x coordinate</param>
 	/// <param name="y">tile y coordinate</param>
 	/// <returns>a tile, either what it actually is, or if it was a ship then return a sea tile</returns>
+<<<<<<< HEAD
 	TileView ISeaGrid.Item {
+=======
+	public TileView ISeaGrid.Item {
+>>>>>>> Converted-Code-C#
 		get {
 			TileView result = _MyGrid.Item(x, y);
 
@@ -53,19 +64,31 @@ public class SeaGridAdapter : ISeaGrid
 	/// <summary>
 	/// Indicates that the grid has been changed
 	/// </summary>
+<<<<<<< HEAD
 	// public event EventHandler ISeaGrid.Changed;
+=======
+	public event EventHandler ISeaGrid.Changed;
+>>>>>>> Converted-Code-C#
 
 	/// <summary>
 	/// Get the width of a tile
 	/// </summary>
+<<<<<<< HEAD
 	int ISeaGrid.Width {
+=======
+	public int ISeaGrid.Width {
+>>>>>>> Converted-Code-C#
 		get { return _MyGrid.Width; }
 	}
 
 	/// <summary>
 	/// Get the height of the tile
 	/// </summary>
+<<<<<<< HEAD
 	int ISeaGrid.Height {
+=======
+	public int ISeaGrid.Height {
+>>>>>>> Converted-Code-C#
 		get { return _MyGrid.Height; }
 	}
 
@@ -75,6 +98,7 @@ public class SeaGridAdapter : ISeaGrid
 	/// <param name="row">the row its hitting at</param>
 	/// <param name="col">the column its hitting at</param>
 	/// <returns>The result from hitting that tile</returns>
+<<<<<<< HEAD
 	AttackResult ISeaGrid.HitTile(int row, int col)
 	{
 		return _MyGrid.HitTile(row, col);
@@ -82,3 +106,12 @@ public class SeaGridAdapter : ISeaGrid
 	// #End Region
 
 }
+=======
+	public AttackResult ISeaGrid.HitTile(int row, int col)
+	{
+		return _MyGrid.HitTile(row, col);
+	}
+	#End Region
+
+}
+>>>>>>> Converted-Code-C#

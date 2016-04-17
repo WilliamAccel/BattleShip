@@ -1,6 +1,10 @@
 using SwinGameSDK;
+<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
+=======
+
+>>>>>>> Converted-Code-C#
 /// <summary>
 /// The GameController is responsible for controlling the game,
 /// managing user input, and displaying the current state of the
@@ -347,4 +351,8 @@ public class GameController
 		_aiSetting = setting;
 	}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Converted-Code-C#
