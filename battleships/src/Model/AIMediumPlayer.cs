@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 /// <summary>
 /// The AIMediumPlayer is a type of AIPlayer where it will try and destroy a ship
 /// if it has found a ship
@@ -25,7 +26,7 @@ public class AIMediumPlayer : AIPlayer
 
 	/// <summary>
 	/// GenerateCoordinates should generate random shooting coordinates
-	/// only when it has not found a ship, or has destroyed a ship and 
+	/// only when it has not found a ship, or has destroyed a ship and
 	/// needs new shooting coordinates
 	/// </summary>
 	/// <param name="row">the generated row</param>

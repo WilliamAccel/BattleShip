@@ -1,3 +1,4 @@
+using System;
 /// <summary>
 /// The SeaGridAdapter allows for the change in a sea grid view. Whenever a ship is
 /// presented it changes the view into a sea tile instead of a ship tile.
@@ -29,7 +30,11 @@ public class SeaGridAdapter : ISeaGrid
 		}
 	}
 
+<<<<<<< .merge_file_hVU4ot
 	#region "ISeaGrid Members"
+=======
+	// #Region "ISeaGrid Members"
+>>>>>>> .merge_file_X5mUEQ
 
 	/// <summary>
 	/// Changes the discovery grid. Where there is a ship we will sea water
@@ -37,7 +42,7 @@ public class SeaGridAdapter : ISeaGrid
 	/// <param name="x">tile x coordinate</param>
 	/// <param name="y">tile y coordinate</param>
 	/// <returns>a tile, either what it actually is, or if it was a ship then return a sea tile</returns>
-	public TileView ISeaGrid.Item {
+	TileView ISeaGrid.Item {
 		get {
 			TileView result = _MyGrid.Item(x, y);
 
@@ -52,19 +57,23 @@ public class SeaGridAdapter : ISeaGrid
 	/// <summary>
 	/// Indicates that the grid has been changed
 	/// </summary>
+<<<<<<< .merge_file_hVU4ot
 	public event EventHandler Changed;		/// BUGFIX test: public event EventHandler ISeaGrid.Changed;
+=======
+	// public event EventHandler ISeaGrid.Changed;
+>>>>>>> .merge_file_X5mUEQ
 
 	/// <summary>
 	/// Get the width of a tile
 	/// </summary>
-	public int ISeaGrid.Width {
+	int ISeaGrid.Width {
 		get { return _MyGrid.Width; }
 	}
 
 	/// <summary>
 	/// Get the height of the tile
 	/// </summary>
-	public int ISeaGrid.Height {
+	int ISeaGrid.Height {
 		get { return _MyGrid.Height; }
 	}
 
@@ -74,10 +83,14 @@ public class SeaGridAdapter : ISeaGrid
 	/// <param name="row">the row its hitting at</param>
 	/// <param name="col">the column its hitting at</param>
 	/// <returns>The result from hitting that tile</returns>
-	public AttackResult ISeaGrid.HitTile(int row, int col)
+	AttackResult ISeaGrid.HitTile(int row, int col)
 	{
 		return _MyGrid.HitTile(row, col);
 	}
+<<<<<<< .merge_file_hVU4ot
 	#endregion
+=======
+	// #End Region
+>>>>>>> .merge_file_X5mUEQ
 
 }

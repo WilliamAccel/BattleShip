@@ -263,29 +263,49 @@ public class GameResources
 
 	private void FreeFonts()
 	{
+<<<<<<< .merge_file_SqUkmb
 		foreach (var font in _Fonts.Values) {
 			SwinGame.FreeFont(font);
+=======
+		foreach (var obj in _Fonts.Values) {
+			SwinGame.FreeFont(obj);
+>>>>>>> .merge_file_Z3LTYL
 		}
 	}
 
 	private void FreeImages()
 	{
+<<<<<<< .merge_file_SqUkmb
 		foreach (var img in _Images.Values) {
 			SwinGame.FreeBitmap(img);
+=======
+		foreach (var obj in _Images.Values) {
+			SwinGame.FreeBitmap(obj);
+>>>>>>> .merge_file_Z3LTYL
 		}
 	}
 
 	private void FreeSounds()
 	{
+<<<<<<< .merge_file_SqUkmb
 		foreach (var sound in _Sounds.Values) {
 			Audio.FreeSoundEffect(sound);
+=======
+		foreach (var obj in _Sounds.Values) {
+			Audio.FreeSoundEffect(obj);
+>>>>>>> .merge_file_Z3LTYL
 		}
 	}
 
 	private void FreeMusic()
 	{
+<<<<<<< .merge_file_SqUkmb
 		foreach(var music in _Music.Values) {
 			Audio.FreeMusic(music);
+=======
+		foreach (var obj in _Music.Values) {
+			Audio.FreeMusic(obj);
+>>>>>>> .merge_file_Z3LTYL
 		}
 	}
 
