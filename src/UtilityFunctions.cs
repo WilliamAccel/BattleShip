@@ -281,7 +281,7 @@ static class UtilityFunctions
 		s.StartAnimation("splash");
 		_Animations.Add(s);
 	}
-
+/// this is a test comment 
 	public static void UpdateAnimations()
 	{
 		List<Sprite> ended = new List<Sprite>();
