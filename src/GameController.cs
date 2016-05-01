@@ -155,9 +155,26 @@ public static class GameController
 		isHuman = object.ReferenceEquals(_theGame.Player, HumanPlayer);
 
 		if (isHuman) {
-			UtilityFunctions.Message = "You " + result.ToString();
+			if(result.ToString().Equals("missed"))
+			{
+				UtilityFunctions.Message = "You " + result.ToString() + "                    It's AI turn now!";
+			}
+			else
+			{
+				UtilityFunctions.Message = "You " + result.ToString();
+			}
+			
+			
 		} else {
-			UtilityFunctions.Message = "The AI " + result.ToString();
+			
+			if(result.ToString().Equals("missed"))
+			{
+				UtilityFunctions.Message = "The AI " + result.ToString() + "                Its Your turn now!";
+			}
+			else
+			{
+				UtilityFunctions.Message = "The AI " + result.ToString();
+			}
 		}
 
 		switch (result.Value) {
