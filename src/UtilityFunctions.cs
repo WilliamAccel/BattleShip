@@ -87,8 +87,8 @@ static class UtilityFunctions
 	/// <param name="thePlayer">the player to show the ships of</param>
 	public static void DrawSmallField(ISeaGrid grid, Player thePlayer)
 	{
-		const int SMALL_FIELD_LEFT = 39;
-		const int SMALL_FIELD_TOP = 373;
+		const int SMALL_FIELD_LEFT = 92;//39 +53
+		const int SMALL_FIELD_TOP = 313;//373 -60
 		const int SMALL_FIELD_WIDTH = 166;
 		const int SMALL_FIELD_HEIGHT = 166;
 		const int SMALL_FIELD_CELL_WIDTH = 13;
