@@ -220,7 +220,18 @@ static class UtilityFunctions
 	/// </summary>
 	public static void DrawMessage()
 	{
-		SwinGame.DrawText(Message, MESSAGE_COLOR, GameResources.GameFont("Courier"), FIELD_LEFT, MESSAGE_TOP);
+        if (_message == "You hit something!")
+        {
+            SwinGame.DrawText(Message, SwinGame.RGBAColor(0, 255, 0, 255), GameResources.GameFont("Courier"), FIELD_LEFT, MESSAGE_TOP);
+        }
+        else if(_message.Contains("You missed")) 
+        {
+            SwinGame.DrawText(Message, SwinGame.RGBAColor(255, 0, 0, 255), GameResources.GameFont("Courier"), FIELD_LEFT, MESSAGE_TOP);
+        }
+        else
+        {
+            SwinGame.DrawText(Message, MESSAGE_COLOR, GameResources.GameFont("Courier"), FIELD_LEFT, MESSAGE_TOP);
+        }
 	}
 
 	/// <summary>
