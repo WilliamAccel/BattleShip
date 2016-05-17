@@ -204,6 +204,15 @@ public static class GameController
 				break;
 			case ResultOfAttack.Miss:
 				PlayMissSequence(result.Row, result.Column, isHuman);
+				
+				switch (_aiSetting) 
+				{
+					case AIOption.Easy:
+						UtilityFunctions.DrawField(GameController.ComputerPlayer.PlayerGrid, GameController.ComputerPlayer, true);
+					break;
+				}
+				
+				
 				break;
 			case ResultOfAttack.ShotAlready:
 				Audio.PlaySoundEffect(GameResources.GameSound("Error"));
